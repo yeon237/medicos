@@ -1,2 +1,5 @@
 @charset "UTF-8";
 
+#main_wrap .main01.w1200 ul {
+    display: flex;
+}

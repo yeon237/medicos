@@ -5,57 +5,256 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MEDICOS</title>
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300;400&family=Noto+Sans+KR:wght@100;300;400;500;700&family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&family=Alegreya+Sans+SC:wght@100;300;400&family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <div id="wrap">
+        <!-- header -->
         <header id="hd_wrap">
             <div id="hd_inner">
                 <div class="container w1200">
-                    <h1 class="logo"></h1>
-                    <nav>
+                    <h1 class="logo">MEDICOS</h1>
+                    <nav class="gnb">
                         <ul>
                             <li>회사소개</li>
                             <li>제품소개</li>
                             <li>R&D</li>
                             <li>고객지원</li>
                         </ul>
+                        <div id="nav_icon"><img src="./images/global.png" alt=""></div>
                     </nav>
-                    <div id="nav_icon">글로벌아이콘</div>
                 </div>
             </div>
         </header>
+        <!-- //header -->
         <main id="main_wrap">
-            <div id="swiper">메인이미지</div>
+            <!-- main visual -->
+            <div id="swiper">메인이미지 swiper h800</div>
+            <!-- //main visual -->
+            <!-- about us -->
             <section class="main01 w1200">
-                <h2 class=""></h2>
+                <h2 class="m_title">About Us</h2>
+                <span class="m_desc">메디코스는 있는 그대로의 건강한 아름다움을 약속합니다.</span>
                 <ul>
-                    <li class="animate__animated animate__fadeInUp">
-                        <div></div>
+                    <li class="애니메이트 클래스넣기">
+                        <a href="#">
+                            <div class="img_wrap">
+                                <img src="./images/about_img01.png" alt="">
+                            </div>
+                            <div class="txt_wrap">
+                                <span>제품개발</span>
+                                <p>최고품질의 천연화장품을 개발/유통/판매</p>
+                            </div>
+                        </a>
                     </li>
-                    <li></li>
-                    <li></li>
+                    <li class="애니메이트 클래스넣기">
+                        <a href="#">
+                            <div class="img_wrap">
+                                <img src="./images/about_img02.png" alt="">
+                            </div>
+                            <div class="txt_wrap">
+                                <span>R&D 연구소</span>
+                                <p>다년간 축척된 노하우와 우수한 연구진</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="애니메이트 클래스넣기">
+                        <a href="#">
+                            <div class="img_wrap">
+                                <img src="./images/about_img03.png" alt="">
+                            </div>
+                            <div class="txt_wrap">
+                                <span>OEM/ODM</span>
+                                <p>고객으로부터 신뢰를 받는 기업</p>
+                            </div>
+                        </a>
+                    </li>
                 </ul>
             </section>
+            <!-- //about us -->
+            <!-- main banner -->
             <section class="main02">
-                <div>
-                    <div>1</div>
-                    <div>2</div>
+                <div class="b_wrap">
+                    <div class="left">
+                        <div class="tit">
+                            <h2>
+                                15일 후
+                                <br>
+                                나에게 찾아온 가장 큰 변화,
+                            </h2>
+                            <strong>
+                                안티에이징 비타민C 솔루션
+                            </strong>
+                        </div>
+                        <div class="txt">
+                            <span>
+                                피부에 미백과 탄력을 채우는 안티에이징 솔루션
+                                <br>
+                                건강한 피부로 다시 태어나다.
+                            </span>
+                        </div>
+                        <a href="#">
+                            <span>자세히보기</span>
+                        </a>
+                    </div>
+                    <div class="right">
+                        <img src="./images/m_banner01.png" alt="">
+                    </div>
                 </div>
             </section>
-            <section class="main03 w1200"></section>
-            <section class="main04">parallax</section>
-            <section class="main05 w1200"></section>
-            <section class="main06 w1200"></section>
+            <!-- //main banner -->
+            <!-- product -->
+            <section class="main03 w1200">
+                <h2 class="m_title">Product</h2>
+                <span class="m_desc">건강한 내일을 만들어내는 천연화장품을 소개합니다.</span>
+                <div class="pl_box">
+                    <div class="box01">
+                        <a href="">
+                            <ul>
+                                <li>
+                                    <img src="./images/p_box01.png" alt="">
+                                </li>
+                                <li>
+                                    <span class="tit">Chamomile Care</span>
+                                    <p class="txt">
+                                        카모마일 수딩크림으로
+                                        <br>
+                                        고보습케어
+                                    </p>
+                                </li>
+                            </ul>
+                        </a>
+                    </div>
+                    <div class="box02">
+                        <a href="">
+                            <ul>
+                                <li>
+                                    <span class="tit">Rose Care</span>
+                                    <p class="txt">
+                                        생기있는 장밋빛
+                                        <br>
+                                        에너지솔루션
+                                    </p>
+                                </li>
+                                <li>
+                                    <img src="./images/p_box02.png" alt="">
+                                </li>
+                            </ul>
+                        </a>
+                    </div>
+                </div>
+                <a href="#">
+                    <div class="pr_box">
+                        <img src="./images/p_box03.png" alt="">
+                    </div>
+                </a>
+            </section>
+            <!-- //product -->
+            <!-- counting -->
+            <section class="main04 w1200">
+                <ul>
+                    <li>
+                        <div class="num">
+                            <b>5</b>
+                            <h4>년</h4>
+                            <div class="txt">
+                                <h4>메디코스 설립</h4>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="num">
+                            <b>243</b>
+                            <h4>개</h4>
+                            <div class="txt">
+                                <h4>출시된 천연화장품</h4>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="num">
+                            <b>8</b>
+                            <h4>만개</h4>
+                            <div class="txt">
+                                <h4>국내외 유명 협력사</h4>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <!-- //counting -->
+            <!-- parallax banner -->
+            <section class="main05" data-width="" data-height="">
+                <div class="tit">
+                    <span>고객님의 건강한 피부를 위한</span>
+                    <br>
+                    <strong>메디코스의 약속</strong>
+                </div>
+                <div class="txt">
+                    <p>
+                        끊임없는 도전과 연구로 건강한 피부를 위한
+                        <br>
+                        천연화장품을 만들겠습니다.
+                    </p>
+                </div>
+            </section>
+            <!-- //parallax banner -->
+            <!-- notice -->
+            <section class="main06 w1200">
+                <h2 class="m_title">Product</h2>
+                <span class="m_desc">건강한 내일을 만들어내는 천연화장품을 소개합니다.</span>
+                <ul>
+                    <li class="애니메이트 클래스넣기">
+                        <a href="#">
+                            <div class="img_wrap">
+                                <img src="./images/news_img01.png" alt="">
+                            </div>
+                            <div class="txt_wrap">
+                                <span>‘제6회 서울 천연화장품 박람회’ 참가</span>
+                                <p>서울 천연화장품 박람회에 메디코스가 참가합니다.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="애니메이트 클래스넣기">
+                        <a href="#">
+                            <div class="img_wrap">
+                                <img src="./images/news_img02.png" alt="">
+                            </div>
+                            <div class="txt_wrap">
+                                <span>‘제6회 서울 천연화장품 박람회’ 참가</span>
+                                <p>서울 천연화장품 박람회에 메디코스가 참가합니다.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="애니메이트 클래스넣기">
+                        <a href="#">
+                            <div class="img_wrap">
+                                <img src="./images/news_img03.png" alt="">
+                            </div>
+                            <div class="txt_wrap">
+                                <span>‘제6회 서울 천연화장품 박람회’ 참가</span>
+                                <p>서울 천연화장품 박람회에 메디코스가 참가합니다.</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <!-- //notice -->
         </main>
+        <!-- footer -->
         <footer>
             <div id="f_inner">
-                <h1 class="f_logo"></h1>
-                <p class="copy"></p>
+                <h1 class="f_logo">MEDICOS</h1>
+                <p class="copy">
+                    서울특별시 강서구 문화로 123-45 문화빌딩 B동 1234호 (주)메디코스<br>
+                    사업자 등록번호: 123-45-67890 | 대표 : 홍길동<br>
+                    Copyright (c) 2021 MEDICOS, INC. All rights reserved.
+                </p>
             </div>
         </footer>
+        <!-- //footer -->
     </div>
 </body>
 </html>
