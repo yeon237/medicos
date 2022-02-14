@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MEDICOS</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&family=Alegreya+Sans+SC:wght@100;300;400&family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&family=Alegreya+Sans+SC:wght@100;300;400;500&family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/swiper.css">
 </head>
 <body>
     <div id="wrap">
         <!-- header -->
         <header id="hd_wrap">
             <div id="hd_inner">
-                <div class="container w1200">
+                <div class="container">
                     <h1 class="logo">MEDICOS</h1>
                     <nav class="gnb">
                         <ul>
@@ -22,8 +23,8 @@
                             <li>제품소개</li>
                             <li>R&D</li>
                             <li>고객지원</li>
+                            <li class="nav_icon"><img src="./images/global.png" alt=""></li>
                         </ul>
-                        <div id="nav_icon"><img src="./images/global.png" alt=""></div>
                     </nav>
                 </div>
             </div>
@@ -31,10 +32,22 @@
         <!-- //header -->
         <main id="main_wrap">
             <!-- main visual -->
-            <div id="swiper">메인이미지 swiper h800</div>
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide slide1"></div>
+                <div class="swiper-slide slide2"></div>
+                <div class="swiper-slide slide3"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-white"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
+            </div>
             <!-- //main visual -->
             <!-- about us -->
-            <section class="main01 w1200">
+            <section class="main01">
                 <h2 class="m_title">About Us</h2>
                 <span class="m_desc">메디코스는 있는 그대로의 건강한 아름다움을 약속합니다.</span>
                 <ul>
@@ -95,9 +108,12 @@
                                 건강한 피부로 다시 태어나다.
                             </span>
                         </div>
-                        <a href="#">
-                            <span>자세히보기</span>
-                        </a>
+                        <div class="w_btn">
+                            <a href="#">
+                                <span>자세히보기</span>
+                            </a>
+                        </div>
+                        
                     </div>
                     <div class="right">
                         <img src="./images/m_banner01.png" alt="">
@@ -106,54 +122,56 @@
             </section>
             <!-- //main banner -->
             <!-- product -->
-            <section class="main03 w1200">
+            <section class="main03">
                 <h2 class="m_title">Product</h2>
                 <span class="m_desc">건강한 내일을 만들어내는 천연화장품을 소개합니다.</span>
-                <div class="pl_box">
-                    <div class="box01">
-                        <a href="">
-                            <ul>
-                                <li>
-                                    <img src="./images/p_box01.png" alt="">
-                                </li>
-                                <li>
-                                    <span class="tit">Chamomile Care</span>
-                                    <p class="txt">
-                                        카모마일 수딩크림으로
-                                        <br>
-                                        고보습케어
-                                    </p>
-                                </li>
-                            </ul>
-                        </a>
+                <div class="box">
+                    <div class="pl_box">
+                        <div class="box01">
+                            <a href="">
+                                <ul>
+                                    <li>
+                                        <img src="./images/p_box01.png" alt="">
+                                    </li>
+                                    <li>
+                                        <span class="tit">Chamomile Care</span>
+                                        <p class="txt">
+                                            카모마일 수딩크림으로
+                                            <br>
+                                            고보습케어
+                                        </p>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                        <div class="box02">
+                            <a href="">
+                                <ul>
+                                    <li>
+                                        <span class="tit">Rose Care</span>
+                                        <p class="txt">
+                                            생기있는 장밋빛
+                                            <br>
+                                            에너지솔루션
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <img src="./images/p_box02.png" alt="">
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
                     </div>
-                    <div class="box02">
-                        <a href="">
-                            <ul>
-                                <li>
-                                    <span class="tit">Rose Care</span>
-                                    <p class="txt">
-                                        생기있는 장밋빛
-                                        <br>
-                                        에너지솔루션
-                                    </p>
-                                </li>
-                                <li>
-                                    <img src="./images/p_box02.png" alt="">
-                                </li>
-                            </ul>
-                        </a>
-                    </div>
+                    <a href="#">
+                        <div class="pr_box">
+                            <img src="./images/p_box03.png" alt="">
+                        </div>
+                    </a>
                 </div>
-                <a href="#">
-                    <div class="pr_box">
-                        <img src="./images/p_box03.png" alt="">
-                    </div>
-                </a>
             </section>
             <!-- //product -->
             <!-- counting -->
-            <section class="main04 w1200">
+            <section class="main04">
                 <ul>
                     <li>
                         <div class="num">
@@ -203,8 +221,8 @@
             <!-- //parallax banner -->
             <!-- notice -->
             <section class="main06 w1200">
-                <h2 class="m_title">Product</h2>
-                <span class="m_desc">건강한 내일을 만들어내는 천연화장품을 소개합니다.</span>
+                <h2 class="m_title">News & Media</h2>
+                <span class="m_desc">메디코스의 새소식을 알려드립니다.</span>
                 <ul>
                     <li class="애니메이트 클래스넣기">
                         <a href="#">
@@ -256,5 +274,8 @@
         </footer>
         <!-- //footer -->
     </div>
+<script src="./js/jquery.parallax-scroll.min.js"></script>
+<script src="./js/swiper.min.js"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>
