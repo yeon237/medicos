@@ -238,26 +238,20 @@ width: 100%;
     width: 100%;
     text-align: center;
     padding-top: 80px;
-    position: relative;
+    display: flex;
 }
 
 .left {
-    position: relative;
     width: 50%;
     height: 600px;
 }
 
 .right {
-    position: absolute;
-    left: 49%;
-    top: 80px;
     width: 50%;
     height: 600px;
-    overflow: hidden;
 }
 
 .box01 {
-    position: relative;
     width: 100%;
     height: 50%;
     text-align: center;
@@ -265,12 +259,18 @@ width: 100%;
 }
 
 .box01 > ul {
-    width: 100%;
-    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.box01 > ul > li {
+    width: 50%;
+}
+
+.box01 > ul > li > img {
 }
 
 .box02 {
-    position: relative;
     width: 100%;
     height: 50%;
     text-align: center;
@@ -278,21 +278,15 @@ width: 100%;
 }
 
 .box02 > ul {
-    width: 100%;
-    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
-.box01 > ul > li {
-    position: relative;
-    float: left;
+.box02 > ul > li {
     width: 50%;
-    height: 100%;
-    overflow: hidden;
 }
 
-.box01 > ul > li > img {
-    left: 0;
-}
+
 
 /* counting */
 /* parallax banner */
