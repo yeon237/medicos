@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/swiper.css">
+    
 </head>
 <body>
     <div id="wrap">
@@ -169,25 +170,27 @@
                 <ul>
                     <li>
                         <div class="num">
-                            <b>5</b>
+                            <p id="counter1" class="headline"></p>
                             <h4>년</h4>
                             <div class="txt">
                                 <h4>메디코스 설립</h4>
                             </div>
                         </div>
                     </li>
+                    <li class="line"></li>
                     <li>
                         <div class="num">
-                            <b>243</b>
+                            <p id="counter2" class="headline"></p>
                             <h4>개</h4>
                             <div class="txt">
                                 <h4>출시된 천연화장품</h4>
                             </div>
                         </div>
                     </li>
+                    <li class="line"></li>
                     <li>
                         <div class="num">
-                            <b>8</b>
+                            <p id="counter3" class="headline"></p>
                             <h4>만개</h4>
                             <div class="txt">
                                 <h4>국내외 유명 협력사</h4>
@@ -198,7 +201,7 @@
             </section>
             <!-- //counting -->
             <!-- parallax banner -->
-            <section class="main05" data-width="" data-height="">
+            <div id="parallax_banner" class="container bg-holder" data-width="1976" data-height="400">
                 <div class="tit">
                     <span>고객님의 건강한 피부를 위한</span>
                     <br>
@@ -211,10 +214,10 @@
                         천연화장품을 만들겠습니다.
                     </p>
                 </div>
-            </section>
+            </div>
             <!-- //parallax banner -->
             <!-- notice -->
-            <section class="main06 w1200">
+            <section class="main06">
                 <h2 class="m_title">News & Media</h2>
                 <span class="m_desc">메디코스의 새소식을 알려드립니다.</span>
                 <ul>
@@ -235,8 +238,8 @@
                                 <img src="./images/news_img02.png" alt="">
                             </div>
                             <div class="txt_wrap">
-                                <span>‘제6회 서울 천연화장품 박람회’ 참가</span>
-                                <p>서울 천연화장품 박람회에 메디코스가 참가합니다.</p>
+                                <span>메디코스,  2022년 ‘ISO’ 인증</span>
+                                <p>메디코스는  2022년에  ISO 인증을 획득하였습니다.</p>
                             </div>
                         </a>
                     </li>
@@ -246,8 +249,8 @@
                                 <img src="./images/news_img03.png" alt="">
                             </div>
                             <div class="txt_wrap">
-                                <span>‘제6회 서울 천연화장품 박람회’ 참가</span>
-                                <p>서울 천연화장품 박람회에 메디코스가 참가합니다.</p>
+                                <span>메디코스, 2024년 신공장 건설 확정</span>
+                                <p>드디어 제2공장인 신공장 건설계획이 확정되었습니다.</p>
                             </div>
                         </a>
                     </li>
@@ -257,7 +260,7 @@
         </main>
         <!-- footer -->
         <footer>
-            <div id="f_inner">
+            <div class="f_inner">
                 <h1 class="f_logo">MEDICOS</h1>
                 <p class="copy">
                     서울특별시 강서구 문화로 123-45 문화빌딩 B동 1234호 (주)메디코스<br>
@@ -268,7 +271,9 @@
         </footer>
         <!-- //footer -->
     </div>
-<script src="./js/jquery.parallax-scroll.min.js"></script>
+<script src="./js/jquery-3.6.0.min.js"></script>
+<script src="./js/scrollreveal.min.js"></script>
+<script src="./js/jquery.parallax-scroll.js"></script>
 <script src="./js/swiper.min.js"></script>
 <script src="./js/main.js"></script>
 </body>

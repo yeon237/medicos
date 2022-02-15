@@ -99,8 +99,12 @@ width: 100%;
 
 #hd_inner .container .gnb ul > li {
     width: 20%;
-    text-align: center;
+    text-align: end;
 }
+
+/* #hd_inner .container .gnb ul > li:last-child {
+    text-align: end;
+} */
 
 /* main */
 /* main visual */
@@ -267,9 +271,6 @@ width: 100%;
     width: 50%;
 }
 
-.box01 > ul > li > img {
-}
-
 .box02 {
     width: 100%;
     height: 50%;
@@ -286,13 +287,169 @@ width: 100%;
     width: 50%;
 }
 
+.box .tit {
+    color: #fff;
+    font-family: 'Titillium Web';
+    font-size: 30px;
+    font-weight: 600;
+}
 
+.box .txt {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 10px;
+}
 
 /* counting */
-/* parallax banner */
-/* notice */
-/* footer */
+.main04 {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 120px 0;
+    text-align: center;
+}
 
+.main04 > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.main04 .line {
+    border-left: 1px solid #E0E0E0;
+}
+
+.main04 .num > p {
+    font-family: 'Titillium Web';
+    font-size: 100px;
+    font-weight: 600;
+    color: #C25959;
+}
+
+.main04 .num .txt > h4 {
+    font-size: 26px;
+    font-weight: 300;
+    color: #666;
+}
+
+
+/* parallax banner */
+
+.bg-holder#parallax_banner {
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    background:url(../images/b_img.png);
+    background-position: center;
+    text-align: center;
+    background-repeat: no-repeat;
+	background-size:cover;
+	overflow:hidden;
+    position: relative;
+}
+
+#parallax_banner .container {
+    position: relative;
+    cursor: pointer;
+    min-height: 400px;
+}
+
+.bg-holder{
+    width:100%;
+    height:400px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#parallax_banner .tit > span {
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: 0.10em;
+
+}
+
+#parallax_banner .tit > strong {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#parallax_banner .txt {
+    font-size: 20px;
+    font-weight: 350;
+    padding: 36px 0;
+}
+
+/* notice */
+.main06 {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 120px;
+    text-align: center;
+}
+
+.main06 > ul {
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main06 > ul > li {
+    border: 1px solid #E0E0E0;
+}
+
+.main06 .txt_wrap {
+    padding: 24px;
+    text-align: left;
+}
+
+.main06 .txt_wrap > span {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.main06 .txt_wrap > p {
+    font-size: 14px;
+    color: #666666;
+    letter-spacing: -0.5px;
+    padding-top: 6px;
+}
+
+
+/* footer */
+.f_inner {
+    margin-top: 120px;
+    height: 260px;
+    background-color: #2e2e2e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.f_inner .f_logo {
+    font-family: 'Alegreya Sans SC';
+    font-weight: 300;
+    font-size: 34px;
+    letter-spacing: 0.05em;
+    line-height: 80px;
+    color: #ccc;
+    
+}
+
+.f_inner .copy {
+    font-size: 13px;
+    color: #999;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    line-height: 20px;
+
+}
 
 
 /* 미디어 쿼리 
