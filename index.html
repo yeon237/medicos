@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/swiper.css">
-    
+    <link rel="stylesheet" href="./css/aos.css">    
 </head>
 <body>
     <div id="wrap">
@@ -52,7 +52,7 @@
                 <h2 class="m_title">About Us</h2>
                 <span class="m_desc">메디코스는 있는 그대로의 건강한 아름다움을 약속합니다.</span>
                 <ul>
-                    <li class="애니메이트 클래스넣기">
+                    <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                         <a href="#">
                             <div class="img_wrap">
                                 <img src="./images/about_img01.png" alt="">
@@ -63,7 +63,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="애니메이트 클래스넣기">
+                    <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                         <a href="#">
                             <div class="img_wrap">
                                 <img src="./images/about_img02.png" alt="">
@@ -74,7 +74,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="애니메이트 클래스넣기">
+                    <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
                         <a href="#">
                             <div class="img_wrap">
                                 <img src="./images/about_img03.png" alt="">
@@ -92,7 +92,7 @@
             <section class="main02">
                 <div class="b_wrap">
                     <div class="left">
-                        <div class="tit">
+                        <div class="tit" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
                             <h2>
                                 15일 후
                                 <br>
@@ -102,19 +102,18 @@
                                 안티에이징 비타민C 솔루션
                             </strong>
                         </div>
-                        <div class="txt">
+                        <div class="txt" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
                             <span>
                                 피부에 미백과 탄력을 채우는 안티에이징 솔루션
                                 <br>
                                 건강한 피부로 다시 태어나다.
                             </span>
                         </div>
-                        <div class="w_btn">
+                        <div class="w_btn" data-aos="fade-down" data-aos-duration="800" data-aos-delay="600">
                             <a href="#">
                                 <span>자세히보기</span>
                             </a>
                         </div>
-                        
                     </div>
                     <div class="right">
                         <img src="./images/m_banner01.png" alt="">
@@ -130,10 +129,10 @@
                     <div class="left">
                         <div class="box01">
                             <ul>
-                                <li>
-                                    <img src="./images/p_box01.png" alt="">
+                                <li class="img_wrap">
+                                    <a href="#"><img src="./images/p_box01.png" alt=""></a>
                                 </li>
-                                <li>
+                                <li data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
                                     <span class="tit">Chamomile Care</span>
                                     <p class="txt">
                                         카모마일 수딩크림으로
@@ -145,7 +144,7 @@
                         </div>
                         <div class="box02">
                             <ul>
-                                <li>
+                                <li data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
                                     <span class="tit">Rose Care</span>
                                     <p class="txt">
                                         생기있는 장밋빛
@@ -153,14 +152,14 @@
                                         에너지솔루션
                                     </p>
                                 </li>
-                                <li>
-                                    <img src="./images/p_box02.png" alt="">
+                                <li class="img_wrap">
+                                    <a href=""><img src="./images/p_box02.png" alt=""></a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="right">
-                        <img src="./images/p_box03.png" alt="">
+                    <div class="right img_wrap">
+                        <a href=""><img src="./images/p_box03.png" alt=""></a>
                     </div>
                 </div>
             </section>
@@ -221,7 +220,7 @@
                 <h2 class="m_title">News & Media</h2>
                 <span class="m_desc">메디코스의 새소식을 알려드립니다.</span>
                 <ul>
-                    <li class="애니메이트 클래스넣기">
+                    <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                         <a href="#">
                             <div class="img_wrap">
                                 <img src="./images/news_img01.png" alt="">
@@ -232,7 +231,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="애니메이트 클래스넣기">
+                    <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                         <a href="#">
                             <div class="img_wrap">
                                 <img src="./images/news_img02.png" alt="">
@@ -243,7 +242,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="애니메이트 클래스넣기">
+                    <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
                         <a href="#">
                             <div class="img_wrap">
                                 <img src="./images/news_img03.png" alt="">
@@ -272,6 +271,8 @@
         <!-- //footer -->
     </div>
 <script src="./js/jquery-3.6.0.min.js"></script>
+<!-- <script src="./js/wow.min.js"></script> -->
+<script src="./js/aos.js"></script>
 <script src="./js/scrollreveal.min.js"></script>
 <script src="./js/jquery.parallax-scroll.js"></script>
 <script src="./js/swiper.min.js"></script>
