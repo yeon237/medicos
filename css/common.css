@@ -209,24 +209,26 @@ width: 100%;
 
 .main02 .b_wrap {
     position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+    background-image: url('../images/m_banner01.png');
+    background-position: right;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+}
+
+.main02 .b_wrap > div {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.main02 .b_wrap .left {
-    width: 50%;
+.main02 .b_wrap > div > .left {
     color: #FFFFFF;
     overflow: hidden;
     padding-top: 80px;
-    
-}
-
-.main02 .b_wrap .right {
     width: 50%;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    
 }
 
 /* .main02 {
