@@ -65,6 +65,7 @@ color: #1a1a1a;
 width: 100%;
 }
 
+
 /* header */
 #hd_wrap {}
 
@@ -74,6 +75,10 @@ width: 100%;
     width: 100%;
     margin: 0 auto;
     border-bottom: 1px solid rgb(185 185 185 / 30%);
+}
+
+.change {
+    background-color: rgba(255,255,255,0.95);
 }
 
 #hd_inner .container {
@@ -199,7 +204,6 @@ width: 100%;
 
 /* main banner */
 
-
 .main02 {
     margin-top: 120px;
     width: 100%;
@@ -211,7 +215,7 @@ width: 100%;
     position: relative;
     width: 100%;
     height: 100%;
-    max-width: 1800px;
+    max-width: 1920px;
     margin: 0 auto;
     background-image: url('../images/m_banner01.png');
     background-position: right;
@@ -530,5 +534,83 @@ width: 100%;
 
 /* 미디어 쿼리 
 주의점 : css속성 제일 밑에 작성해야한다. 공통사항 제외하고 변경하고싶은 사항 작성*/
+
+@media screen and (max-width:400px) {}
+
+@media screen and (min-width:401px) and (max-width:767px) {
+    .main01 {
+        width: 100%;
+    }
+    .main01 > ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main01 > ul > li:nth-child(2) {
+        margin: 40px 0;
+    }
+
+    .main02 .b_wrap {
+        background-image: none;
+    }
+
+    .main02 .b_wrap > div > .left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .w_btn > a {
+        margin: 0 auto;
+    }
+
+    .main03 {
+        width: 100%;
+    }
+
+    .main03 .box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box .left {
+        width: 80%;
+    }
+
+    .box .right {
+        width: 80%;
+    }
+
+    .main04 {
+        width: 100%;
+    }
+
+    .main04 .num > p {
+        font-size: 80px;
+    }
+    
+    .main06 {
+        width: 100%;
+    }
+
+    .main06 > ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main06 > ul > li:nth-child(2) {
+        margin: 40px 0;
+    }
+
+
+
+@media screen and (min-width:768px) and (max-width:1200px) {
+    
+    
+    .main02 .b_wrap > div > .left {
+        padding-top: none;
+        padding: 80px;
+    }
+
+}
 
 
