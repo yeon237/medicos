@@ -587,7 +587,7 @@ width: 100%;
     .main04 .num > p {
         font-size: 80px;
     }
-    
+
     .main06 {
         width: 100%;
     }
@@ -600,7 +600,7 @@ width: 100%;
     .main06 > ul > li:nth-child(2) {
         margin: 40px 0;
     }
-
+}
 
 
 @media screen and (min-width:768px) and (max-width:1200px) {
@@ -612,5 +612,3 @@ width: 100%;
     }
 
 }
-
-
