@@ -21,6 +21,7 @@ ul { list-style: none; }
 }
 .img_wrap img{
     transition-duration: 1s;
+    cursor: pointer;
 }
 .img_wrap {
     overflow: hidden;
