@@ -118,6 +118,14 @@ width: 100%;
     text-align: end;
 }
 
+#hd_inner .container .gnb ul > li > a {
+    display: block;
+}
+
+#hd_inner .container .gnb ul > li > a:hover {
+    color: #C25959;
+}
+
 /* #hd_inner .container .gnb ul > li:last-child {
     text-align: end;
 } */
@@ -535,8 +543,130 @@ width: 100%;
 /* 미디어 쿼리 
 주의점 : css속성 제일 밑에 작성해야한다. 공통사항 제외하고 변경하고싶은 사항 작성*/
 
-@media screen and (max-width:400px) {}
+@media screen and (max-width:400px) {
 
+    .gnb > ul > li {
+        display: none;
+    }
+
+    .gnb > ul > li:last-child {
+        display: block;
+    }
+
+    .main01 {
+        width: 100%;
+    }
+    .main01 > ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main01 > ul > li:nth-child(2) {
+        margin: 40px 0;
+    }
+
+    .main02 .b_wrap {
+        background-image: none;
+    }
+
+    .main02 .b_wrap > div > .left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .b_wrap .left .tit > h2 {
+        font-size: 30px;
+    }
+
+    .b_wrap .left .tit > strong {
+        font-size: 30px;
+    }
+
+    .b_wrap .left .txt {
+        font-size: 18px;
+    }
+
+
+    .w_btn > a {
+        margin: 0 auto;
+    }
+
+    .main03 {
+        width: 100%;
+    }
+
+    .main03 .box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box .left {
+        width: 100%;
+    }
+
+    .box .right {
+        width: 100%;
+        height: 380px;
+    }
+
+    .box .right > a > img {
+        width: 100%;
+    }
+    .main04 {
+        width: 100%;
+        padding: 60px 0;
+    }
+    
+    .main04 > ul {
+        flex-direction: column;
+    }
+
+    .main04 .line {
+        border-bottom: 1px solid #E0E0E0;
+        padding: 20px;
+    }
+    .main04 .num > p {
+        font-size: 80px;
+    }
+
+    .bg-holder#parallax_banner {
+        /* background-position: center !important */
+    }
+
+    #parallax_banner .tit {
+        padding-top: 60px;
+    }
+
+    #parallax_banner .tit > span {
+        font-size: 26px;
+    }
+
+    #parallax_banner .tit > strong {
+        font-size: 36px;
+    }
+
+    #parallax_banner .txt {
+        padding: 20px 0;
+    }
+
+    .main06 {
+        width: 100%;
+    }
+
+    .main06 > ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main06 > ul > li:nth-child(2) {
+        margin: 40px 0;
+    }
+
+    .f_inner .copy {
+        font-size: 12px;
+    }
+
+}
 @media screen and (min-width:401px) and (max-width:767px) {
     .main01 {
         width: 100%;
