@@ -76,6 +76,10 @@
     box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
 }
 
+.main01 .img_wrap > img {
+    width: 100%;
+}
+
 .main01 .txt_wrap {
     padding: 30px;
 }
@@ -357,6 +361,10 @@
 
 .main06 > ul > li {
     border: 1px solid #E0E0E0;
+}
+
+.main06 .img_wrap > img {
+    width: 100%;
 }
 
 .main06 .txt_wrap {

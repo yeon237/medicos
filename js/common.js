@@ -13,13 +13,13 @@
 //     }
 // });
 
-// $('.btn_trigger').click(function(){
-//     if($('#mobile_menu').is(':visible')) {
-//         $('#mobile_menu').hide();
-//     } else {
-//         $('#mobile_menu').show();
-//     }
-// });
+$('.btn_trigger').click(function(){
+    if($('#mobile_menu').is(':visible')) {
+        $('#mobile_menu').hide();
+    } else {
+        $('#mobile_menu').show();
+    }
+});
 
 
 

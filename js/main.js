@@ -49,7 +49,13 @@ function showNumberCount() {
 }
 
 
-ScrollReveal().reveal('.headline', { beforeReveal: showNumberCount });
+
+var option = {
+    beforeReveal: showNumberCount,
+    reset: true,
+}
+
+ScrollReveal().reveal('.headline', option);
 
 AOS.init({
     duration: 1000
