@@ -35,3 +35,14 @@ $(window).scroll(function() {
 		$('#hd_inner').removeClass('change');
 	}
 });
+
+
+$(window).resize(function() {
+	var width = $(window).width();
+
+	if(width >= 767) {
+		if ($("#mobile_menu").is(":visible")) {
+			$("#mobile_menu").hide();
+		}
+	}
+});
